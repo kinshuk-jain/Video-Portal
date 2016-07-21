@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="keywords" content="Share,videos, fun">
+        <meta name="description" content="share your videos, have fun">
+       
+        <title>Video Portal</title>
+        
+        <link rel="stylesheet" href="./css/main.css" type="text/css" />
+        <link rel="stylesheet" href="./css/bigVid.css" type="text/css" />
+        
+        <!-- load google fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link rel="stylesheet" href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" type="text/css" />
+        <!-- load favicon -->
+        <link rel="icon" href="./images/favicon.ico" type="image/ico" />
+        <!-- load font awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">  
+    </head>
+    <body>
+        <!-- //////////// Login Modal ////////////// -->
+        
+        <div class="modal" data-popup-open="popup1" id="loginModal">
+            <div class="modal-inner">
+                <div class="modal-content">
+                    <div class="signin">
+                        <h3 class="text-center">Sign In</h3>
+                        <form id="mySignin" method="post" action="javascript:login();">
+                            <table>
+                                <tr>
+                                    <td><label class="labelText">User Name:</label></td>
+                                    <td><input name="uname" type="text" placeholder="Enter username" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="labelText">Password:</label></td>
+                                    <td><input name="passwd" type="password" placeholder="Enter password" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Submit" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="register">
+                        <h3 class="text-center">Register</h3>
+                        <form id="myRegister" method="post" onsubmit="">
+                            <table>
+                                <tr>
+                                    <td><label class="labelText">User Name:</label></td>
+                                    <td><input name="uname2" type="text" placeholder="Enter username" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="labelText">Password:</label></td>
+                                    <td><input name="passwd2" type="password" placeholder="Enter password" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><label class="labelText">Email:</label></td>
+                                    <td><input name="email" type="email" placeholder="Enter email" required/></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit" value="Submit" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="clearfix">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- //////////// Login Modal Ends ////////////// -->
+        
+        <!-- //////////// Navigation Bar ////////////// -->
+        
+        <div class="affix">
+            <img class="logo" src="./images/logo.png">
+            <p class="logoText">Video Portal</p>
+            
+            <div class="nav-links">
+                <ul class="">
+                    <li class="active text-center" id="nav1">
+                        <a class="no-decoration" href="./index.html" onclick="toggleNavLinks(this)">Home</a>
+                    </li>
+                    <li class="text-center" id="nav2">
+                        <a class="no-decoration" href="#videoSection" onclick="toggleNavLinks(this)">Videos</a>
+                    </li>
+                    <li class="text-center" id="nav3">
+                        <a class="no-decoration"></a>
+                    </li>
+                    <li class="text-center" id="nav4">
+                        <a class="no-decoration pointer" onclick="logout()"></a>
+                    </li>
+                </ul>
+                <a class="toggle-navbar pointer no-decoration" onclick="toggleHamburger(this)">&#9776;</a>
+            </div>
+
+            <div class="clearfix">&nbsp;</div>
+        </div>
+        
+        <!-- //////////// Navigation Bar Ends ////////////// -->    
+         
+        <div class="container">
+        
+        <!-- ////////////////// Banner /////////////// -->   
+            
+            <div class="banner">
+                <!-- Insert some animation inside the banner -->
+            </div>
+            
+        <!-- ////////////////// Banner Ends /////////////// -->    
+        
+            <br />
+            
+        <!-- ////////////////// Videos /////////////// -->  
+            
+            <div class="videos" id="videoSection">
+                
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            
+        <!-- ////////////////// Videos End /////////////// -->       
+        </div>
+        
+        <!-- ////////////////// Footer /////////////// -->    
+        
+        <footer class="footer" id="footerSection">
+            <div class="footerText text-left">
+                <p>&copy; Copyright 2016. All rights reserved.</p>
+            </div>
+            <div class="footer-social">
+                <ul class="text-right">
+                    <li>
+                        <a class="no-decoration" href="#footerSection" target="_blank">
+                            <i class="fa fa-facebook-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-decoration" href="#footerSection" target="_blank">
+                            <i class="fa fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="no-decoration" href="#footerSection" target="_blank">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+        </footer>
+        
+        <!-- ////////////////// Footer Ends /////////////// -->
+        
+        <!-- ////////////////// Scripts /////////////// -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="./CryptoJS/rollups/md5.js"></script>
+        <script src="./JS/signup.js"></script>
+        <script src="./JS/vidRender.js"></script>
+        <script src="./JS/rating.js"></script>
+        <script src="./JS/main.js"></script>
+        
+        <script>
+            // for the Bug --- https://bugs.chromium.org/p/chromium/issues/detail?id=124331
+			$(function(){
+				causeRepaintsOn = $("h1, h2, h3, p");
+				$(window).resize(function() {
+					causeRepaintsOn.css("z-index", 1);
+				});
+			});
+            $(document).ready(function(){
+                auth();
+            });
+        </script>>        
+    </body>
+</html>
