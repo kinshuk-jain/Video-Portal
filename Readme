@@ -1,0 +1,67 @@
+                    /***********************************************
+                    
+                                CROSSOVER VIDEO PORTAL 
+                    
+                    ************************************************/
+                    
+
+-=-=-=-=-=-=-=- General Info -=-=-=-=-=-=-=-
+
+-1- The Code has been written in HTML5, CSS3, Javascript and JQuery
+
+-2- The code is well documented. Attempt has been made so that no one with a coding background 
+    should not finds it difficult to understand. 
+   
+-3- The CSS and Javascript files have not been optimized for space to leave comments, whitespaces
+    and tabs. Function names and variables are self-explanatory. This will result in slower load times.
+
+-4- It shows a login popup if the user has not logged in. There is no way for the user to 
+    go around this popup and access our app, thereby fulfilling FUNCTIONAL REQUIREMENT #3.
+
+-5- The popup has color coded indications to guide the user to enter valid credentials
+
+-6- The popup also provides for a future implementation of user sign up. It has
+    not been implemented as of now as it was not required. 
+    
+-7- When in expanded video mode, i.e., on video page, lazy loading has been disabled to keep page length
+    in control and to not go too deep into the scroll pane should we enable it. To enable lazy
+    loading in video mode, comment out line number 236 in vidRender.js and line number 18 in main.js. Uncomment
+    line number 21-25 in main.js. 
+
+
+-=-=-=-=-=-=-=-=- How to Run -=-=-=-=-=-=-=-=-
+
+*** Setup ***
+-1- To setup the application, copy the contents of the "kinshuk_jain-javascript architect" folder in
+    the "client" folder of the app backend. 
+
+-2- Now Copy the contents of "code" folder in the "client" folder of the app backend.
+
+-3- Start the backend NodeJS server on port 3000
+
+-4- Start MongoDB on port 27017
+
+*** Run ***
+-5- To run the application simply run the index.html in the client folder on file in any 
+    javascript enabled browser that supports HTML5 and CSS3. Earlier browser versions will 
+    not show CSS3 animations. 
+   
+-6- You can also open the following URL to run the application - http://localhost:3000/index.html
+
+
+-=-=-=-=-=-=-=-=- Running Unit Tests -=-=-=-=-=-=-=-=-
+
+-1- The unit tests are contained under the "kinshuk_jain-javascript architect/code/unit_tests" folder.
+    If step 1 & 2 under the "How to Run" section above were performed, then unit tests can be found
+    in the "client/unit_tests" folder of the app backend
+    
+-2- Copy the contents of the folder into the "client" folder of the app backend. Open "unit_testing_index.html"
+    file in any javascript enabled browser. If steps 1-4 in "How to Run section" have been followed, you can
+     simply open the following url - http://localhost:3000/unit_testing_index.html to run unit tests. 
+     
+-3- The unit tests make use of setTimeout function of javascript to get around asynchronous nature of ajax calls. 
+    Please wait for 20 seconds at least to let the tests complete. 
+    
+-4- To see full logs, please enable persistent logging on the web console so that it is not refreshed on page reload/
+    navigation
+   
