@@ -32,32 +32,31 @@
 -=-=-=-=-=-=-=-=- How to Run -=-=-=-=-=-=-=-=-
 
 *** Setup ***
--1- To setup the application, copy the contents of the "kinshuk_jain-javascript architect" folder in
-    the "client" folder of the app backend. 
+-1- To setup the application, create a folder named client and copy the following in that folder -
+    - CryptoJS folder
+    - JS folder
+    - css folder
+    - images folder
+    - index.html
+    
+-2- Start the backend NodeJS server on port 3000
 
--2- Now Copy the contents of "code" folder in the "client" folder of the app backend.
-
--3- Start the backend NodeJS server on port 3000
-
--4- Start MongoDB on port 27017
+-3- Start MongoDB on port 27017
 
 *** Run ***
--5- To run the application simply run the index.html in the client folder on file in any 
+-4- To run the application simply run the index.html in the client folder in any 
     javascript enabled browser that supports HTML5 and CSS3. Earlier browser versions will 
     not show CSS3 animations. 
    
--6- You can also open the following URL to run the application - http://localhost:3000/index.html
+-5- You can also open the following URL to run the application - http://localhost:3000/index.html
 
 
 -=-=-=-=-=-=-=-=- Running Unit Tests -=-=-=-=-=-=-=-=-
 
--1- The unit tests are contained under the "kinshuk_jain-javascript architect/code/unit_tests" folder.
-    If step 1 & 2 under the "How to Run" section above were performed, then unit tests can be found
-    in the "client/unit_tests" folder of the app backend
-    
--2- Copy the contents of the folder into the "client" folder of the app backend. Open "unit_testing_index.html"
-    file in any javascript enabled browser. If steps 1-4 in "How to Run section" have been followed, you can
-     simply open the following url - http://localhost:3000/unit_testing_index.html to run unit tests. 
+-1- The unit tests are contained under the "unit_tests" folder.
+    If step 1, 2 and 3 under the "How to Run" section above were performed, then open "unit_tests" folder and copy its contents
+    in the client folder created in step 1 of "how to run".
+-2- Then simply open the broswer console and type the following url - "http://localhost:3000/unit_testing_index.html" to run unit tests. 
      
 -3- The unit tests make use of setTimeout function of javascript to get around asynchronous nature of ajax calls. 
     Please wait for 20 seconds at least to let the tests complete. 
