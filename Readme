@@ -10,7 +10,7 @@
 -1- The Code has been written in HTML5, CSS3, Javascript and JQuery
 
 -2- The code is well documented. Attempt has been made so that no one with a coding background 
-    should not finds it difficult to understand. 
+    finds it difficult to understand. 
    
 -3- The CSS and Javascript files have not been optimized for space to leave comments, whitespaces
     and tabs. Function names and variables are self-explanatory. This will result in slower load times.
@@ -25,8 +25,8 @@
     
 -7- When in expanded video mode, i.e., on video page, lazy loading has been disabled to keep page length
     in control and to not go too deep into the scroll pane should we enable it. To enable lazy
-    loading in video mode, comment out line number 236 in vidRender.js and line number 18 in main.js. Uncomment
-    line number 21-25 in main.js. 
+    loading in video mode, comment out line number 236 in vidRender.js and line number 18 in main.js. 
+    Uncomment line number 21-25 in main.js. 
 
 
 -=-=-=-=-=-=-=-=- How to Run -=-=-=-=-=-=-=-=-
