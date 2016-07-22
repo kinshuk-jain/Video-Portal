@@ -1,0 +1,34 @@
+/************ Video page ***********/
+.bigPane{
+    display:inline-block;
+    float:left;
+    width:69%;
+}
+.smallPane{
+    display:inline-block;
+    margin-left:5px;
+    overflow-y:scroll;
+    width:30%;
+}
+.bigVidCard{
+    background:rgba(240, 240, 240, 0.7);
+    border:1px solid #808080;
+    border-radius:10px;
+    margin-left:-20px;
+    padding:10px;
+    width:100%;
+}
+.bigVidCard video{
+    height:auto;
+    padding:10px;
+    width:95%;
+}
+.smallVidCard{
+    height:300px !important;
+    width:95% !important;
+}
+.smallVidCard video{
+    height:auto;
+    padding:3px;
+    width:95%;
+}
