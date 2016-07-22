@@ -32,14 +32,16 @@
 -=-=-=-=-=-=-=-=- How to Run -=-=-=-=-=-=-=-=-
 
 *** Setup ***
--1- To setup the application, create a folder named client and copy the following in that folder -
+-1- To setup the application, download the repository and change your directory to its path.  
+    Create a folder named client and copy the following in that folder -
     - CryptoJS folder
     - JS folder
     - css folder
     - images folder
     - index.html
     
--2- Start the backend NodeJS server on port 3000
+-2- Start the backend NodeJS server on port 3000. To do so, simply change to the directory where you downloaded the repository in step 1. 
+    Type the following command without quotes - "npm start"
 
 -3- Start MongoDB on port 27017
 
